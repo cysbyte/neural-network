@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import Desc1 from './Desc1'
 import Desc2 from './Desc2'

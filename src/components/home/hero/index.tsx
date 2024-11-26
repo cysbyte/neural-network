@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import bgHero from '@/assets/home/bg-hero.svg'
 

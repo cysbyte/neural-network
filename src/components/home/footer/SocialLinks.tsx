@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import twitter from '@/assets/home/social/twitter.svg'
 import telegram from '@/assets/home/social/telegram.svg'

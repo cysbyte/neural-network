@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import bgFooter from '@/assets/home/bg-footer.svg'
 import Input from './Input'

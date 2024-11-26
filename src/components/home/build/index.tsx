@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import bgBuild from '@/assets/home/bg-build.svg'
 
