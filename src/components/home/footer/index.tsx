@@ -25,7 +25,7 @@ const Footer = () => {
     const Wrapper = styled.section`
         width: 100%;
         height: 1078px;
-        background-image: url('public/bg-footer.svg');
+        background-image: url('/bg-footer.svg');
         margin-top: 1rem;
         @media screen and (max-width: 1040px) {
             height: 100%;
