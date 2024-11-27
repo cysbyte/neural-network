@@ -39,7 +39,7 @@ const Footer = () => {
         letter-spacing: 0.2px;
         @media screen and (max-width: 1040px) {
             width: 100%;
-            padding: 0rem;
+            padding: 4rem 0rem;
         }
         h2 {
             font-family: Inter;
@@ -51,6 +51,11 @@ const Footer = () => {
             text-decoration-skip-ink: none;
             color: white;
             paddign-top: 10rem;
+            @media screen and (max-width: 1040px) {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 36px;
+            }
         }
         p {
             font-family: Inter;

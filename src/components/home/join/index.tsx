@@ -10,6 +10,7 @@ const Join = () => {
         @media screen and (max-width: 1040px) {
             height: auto;
             margin-top: 1rem;
+            margin-bottom: 3rem;
         }
         .container {
             position: relative;
