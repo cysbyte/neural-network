@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import bgFooter from '@/assets/home/bg-footer.svg'
 import Input from './Input'
 import SubscribeButton from './SubscribeButton'
 import SocialLinks from './SocialLinks'
