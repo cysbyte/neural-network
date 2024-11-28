@@ -14,14 +14,6 @@ const Join = () => {
         }
         .container {
             position: relative;
-            .bg-img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 5rem;
-                top: 0;
-                z-index: 1;
-            }
             width: 1162px;
             margin: auto auto;
             display: flex;

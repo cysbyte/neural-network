@@ -21,6 +21,7 @@ const Privacy = () => {
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
                     color: white;
+                    letter-spacing: 1px;
                     span {
                         color: #E75F00;
                     }
@@ -40,6 +41,7 @@ const Privacy = () => {
                     text-decoration-skip-ink: none;
                     color: #FFFFFF80;
                     margin-top: 2.5rem;
+                    letter-spacing: 0.6px;
                     @media screen and (max-width: 1040px) {
                         font-size: 16px;
                         line-height: 24px;
@@ -60,7 +62,7 @@ const Privacy = () => {
             }
         }
         img {
-            margin-right: -5rem;
+            margin-right: -7.5rem;
             margin-top: -2.5rem;
         }
     `
