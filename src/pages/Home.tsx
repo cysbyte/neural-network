@@ -1,13 +1,14 @@
-import Build from '@/components/home/build'
-import Ecosystem from '@/components/home/ecosystem'
-import Footer from '@/components/home/footer'
-import Header from '@/components/home/header'
-import Hero from '@/components/home/hero'
-import Incentive from '@/components/home/incentive'
-import Join from '@/components/home/join'
-import KeyFeatures from '@/components/home/key-features'
-import Privacy from '@/components/home/privacy'
-import Technology from '@/components/home/technology'
+import React from 'react'
+const Build = React.lazy(()=>import('@/components/home/build'))
+const Ecosystem = React.lazy(()=>import('@/components/home/ecosystem'))
+const Footer = React.lazy(()=>import('@/components/home/footer'))
+const Hero = React.lazy(()=>import('@/components/home/hero'))
+const Incentive = React.lazy(()=>import('@/components/home/incentive'))
+const Join = React.lazy(()=>import('@/components/home/join'))
+const KeyFeatures = React.lazy(()=>import('@/components/home/key-features'))
+const Header = React.lazy(()=>import('@/components/home/header'))
+const Privacy = React.lazy(()=>import('@/components/home/privacy'))
+const Technology = React.lazy(()=>import('@/components/home/technology'))
 import styled from 'styled-components'
 
 
