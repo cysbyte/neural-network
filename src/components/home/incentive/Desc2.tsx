@@ -12,7 +12,7 @@ const Desc2 = () => {
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-            color: white;
+            color: #E75F00;
         }
         & > span: nth-child(2) {
             font-family: Inter;
@@ -32,7 +32,7 @@ const Desc2 = () => {
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-            color: white;
+            color: #E75F00;
         }
         & > span: nth-child(4) {
             font-family: Inter;

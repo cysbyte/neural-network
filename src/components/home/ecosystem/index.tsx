@@ -70,6 +70,9 @@ const Ecosystem = () => {
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
             color: white;
+            span {
+                color: #E75F00;
+            }
             @media screen and (max-width: 1040px) {
                 font-size: 30px;
                 line-height: 36px;
@@ -165,7 +168,7 @@ const Ecosystem = () => {
     return (
         <Wrapper>
             <img className='separator' src={separator} alt="" />
-            <h2>The Neural Network Ecosystem: Decentralized <br />AI, Globally Connected
+            <h2>The Neural Network Ecosystem: <br /><span>Decentralized AI, Globally Connected</span>
             </h2>
             <p>A scalable, distributed infrastructure for autonomous AI applications and collaborative intelligence.</p>
             <div className='middle-box'>

@@ -12,7 +12,7 @@ const Desc3 = () => {
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-            color: white;
+            color: #E75F00;
         }
         & > span: nth-child(2) {
             font-family: Inter;

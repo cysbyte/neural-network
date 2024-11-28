@@ -10,9 +10,9 @@ const Privacy = () => {
         gap: 2rem;
         justify-content: center;
         align-items: start;
-        margin-top: 12rem;
+        margin-top: 13rem;
             .left-box {
-                h3 {
+                h2 {
                     font-family: Inter;
                     font-size: 44px;
                     font-weight: 700;
@@ -21,6 +21,9 @@ const Privacy = () => {
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
                     color: white;
+                    span {
+                        color: #E75F00;
+                    }
                     @media screen and (max-width: 1040px) {
                         font-size: 30px;
                         line-height: 36px;
@@ -36,7 +39,7 @@ const Privacy = () => {
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
                     color: #FFFFFF80;
-                    margin-top: 2rem;
+                    margin-top: 2.5rem;
                     @media screen and (max-width: 1040px) {
                         font-size: 16px;
                         line-height: 24px;
@@ -57,14 +60,15 @@ const Privacy = () => {
             }
         }
         img {
-            margin-right: -8rem;
+            margin-right: -5rem;
+            margin-top: -2.5rem;
         }
     `
     return (
         <Wrapper>
             <div className='container'>
                 <div className='left-box'>
-                    <h3>Privacy-Preserving AI Leveraging Zero-Knowledge Proofs for Secure AI</h3>
+                    <h2>Privacy-<span>Preserving AI</span> Leveraging Zero-Knowledge Proofs for <span>Secure AI</span></h2>
                     <p className='desc'>Neural Network integrates Zero-Knowledge Proofs and Federated Learning, allowing privacy-focused AI training for sensitive sectors like healthcare.</p>
                     <p className='cta'>CTA: Start building on the Neural Network</p>
                 </div>

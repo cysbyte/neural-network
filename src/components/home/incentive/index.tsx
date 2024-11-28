@@ -10,22 +10,22 @@ const Incentive = () => {
         {
             id: 1,
             title: "Total Supply",
-            desc: <Desc1/>
+            desc: <Desc1 />
         },
         {
             id: 2,
             title: "Team Allocation",
-            desc: <Desc2/>
+            desc: <Desc2 />
         },
         {
             id: 3,
             title: "Total Supply",
-            desc: <Desc3/>
+            desc: <Desc3 />
         },
         {
             id: 4,
             title: "Mining & Rewards",
-            desc: <Desc4/>
+            desc: <Desc4 />
         },
     ]
     const data2 = [
@@ -46,13 +46,22 @@ const Incentive = () => {
         },
     ]
 
+    const GradientBorderWrapper = styled.div`
+        background: conic-gradient(from 90deg at 50% 50%, #E75F00 0deg, #000000 79.2deg, #E75F00 360deg);
+        border-radius: 32px;
+        padding: 1px;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    `
+
     const Wrapper = styled.section`
         margin-top: 12rem;
         position: relative;
         .separator {
             position: absolute;
             left: 0;
-            bottom: 6.35rem;
+            bottom: 6rem;
             width: 100%;
         }
         h2 {
@@ -64,6 +73,9 @@ const Incentive = () => {
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
             color: white;
+            span {
+                color: #E75F00;
+            }
             @media screen and (max-width: 1040px) {
                 font-size: 30px;
                 line-height: 36px;
@@ -103,16 +115,14 @@ const Incentive = () => {
                 }
             }
             .grid-container {
-                width: 100%;
-                border: 1px solid #414141;
                 background-color: #0A0A0A;
-                border-radius: 32px;
+                width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 2.2fr;
                 row-gap: 2rem;
                 column-gap: 1.2rem;
                 padding: 3rem;
-                margin-top: 2rem;
+                border-radius: 32px;
                 @media screen and (max-width: 1040px) {
                     display: flex;
                     flex-direction: column;
@@ -171,7 +181,7 @@ const Incentive = () => {
                 }
             }
             .bottom-box {
-                margin-top: 6rem;
+                margin-top: 5rem;
                 & > p: first-child {
                     font-family: Inter;
                     font-size: 16px;
@@ -198,40 +208,42 @@ const Incentive = () => {
             }
         }
     `
-  return (
-    <Wrapper>
-        <img className='separator' src={separator} alt="" />
-        <h2>Incentive-Driven AI Collaboration</h2>
-        <p>Rewarding users for impactful contributions in AI training, data processing, and model optimization, fostering a collaborative and high-<br/>performance AI ecosystem.</p>
-        <div className='middle-box'>
-            <h4>Tokenomics</h4>
-            <div className='grid-container'>
-                {
-                    data1.map((item)=>(
-                        <div key={item.id} className='grid-card' >
-                            <h6>{item.title}</h6>
-                            {item.desc}
-                        </div>
-                    ))
-                }
+    return (
+        <Wrapper>
+            <img className='separator' src={separator} alt="" />
+            <h2>Incentive- <span>Driven AI Collaboration</span></h2>
+            <p>Rewarding users for impactful contributions in AI training, data processing, and model optimization, fostering a collaborative and high-<br />performance AI ecosystem.</p>
+            <div className='middle-box'>
+                <h4>Tokenomics</h4>
+                <GradientBorderWrapper>
+                    <div className='grid-container'>
+                        {
+                            data1.map((item) => (
+                                <div key={item.id} className='grid-card' >
+                                    <h6>{item.title}</h6>
+                                    {item.desc}
+                                </div>
+                            ))
+                        }
+                    </div>
+                </GradientBorderWrapper>
+                <div className='flex-container'>
+                    {
+                        data2.map((item) => (
+                            <div key={item.id} className='flex-card'>
+                                <h6>{item.title}</h6>
+                                <p>{item.desc}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className='bottom-box'>
+                    <p>CTA: Explore Neural Network [Link]</p>
+                    <p>[Graphical Virtualization tokenomics ]</p>
+                </div>
             </div>
-            <div className='flex-container'>
-                {
-                    data2.map((item)=>(
-                        <div key={item.id} className='flex-card'>
-                            <h6>{item.title}</h6>
-                            <p>{item.desc}</p>
-                        </div>
-                    ))
-                }
-            </div>
-            <div className='bottom-box'>
-                <p>CTA: Explore Neural Network [Link]</p>
-                <p>[Graphical Virtualization tokenomics ]</p>
-            </div>
-        </div>
-    </Wrapper>
-  )
+        </Wrapper>
+    )
 }
 
 export default Incentive

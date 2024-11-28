@@ -28,7 +28,7 @@ const KeyFeatures = () => {
     const Wrapper = styled.section`
         width: 100%;
         height: 662px;
-        margin-top: 8rem;
+        margin-top: 2.5rem;
         position: relative;
         @media screen and (max-width: 1040px) {
             margin-top: 5rem;
@@ -36,7 +36,7 @@ const KeyFeatures = () => {
         .bg-img {
             position: absolute;
             left: 0;
-            bottom: 1rem;
+            bottom: 0rem;
             z-index: 0;
             @media screen and (max-width: 1040px) {
                 display: none;
@@ -69,7 +69,7 @@ const KeyFeatures = () => {
             }
             .middle-box {
                 width: 100%;
-                margin-top: 4rem;
+                margin-top: 5rem;
                 h4 {
                     font-family: Inter;
                     font-size: 24px;
@@ -94,10 +94,10 @@ const KeyFeatures = () => {
             }
             .features-box {
                 width: 1040px;
-                margin-top: 6rem;
+                margin-top: 5.5rem;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                row-gap: 4rem;
+                row-gap: 2.2rem;
                 column-gap: 4rem;
                 @media screen and (max-width: 1040px) {
                     width: 100%;
@@ -113,6 +113,7 @@ const KeyFeatures = () => {
                         width: 100%;
                     }
                     h3 {
+                        z-index: 100;
                         font-family: Inter;
                         font-size: 24px;
                         font-weight: 500;
@@ -129,8 +130,8 @@ const KeyFeatures = () => {
                     p {
                         font-family: Inter;
                         font-size: 16px;
-                        font-weight: 400;
-                        line-height: 19.36px;
+                        font-weight: 300;
+                        line-height: 24x;
                         text-align: left;
                         text-underline-position: from-font;
                         text-decoration-skip-ink: none;
@@ -160,7 +161,6 @@ const KeyFeatures = () => {
                     }
                 </div>
             </div>
-            {/* <div className='bg-gradient'>abcd</div> */}
             <img className='bg-img' src={bg} height={416} alt="" />
         </Wrapper>
     )

@@ -43,7 +43,7 @@ const Build = () => {
     ]
     const Wrapper = styled.section`
         width: 100%;
-        margin-top: 12rem;
+        margin-top: 12.5rem;
         position: relative;
         @media screen and (max-width: 1040px) {
             margin-top: 5rem;
@@ -63,6 +63,9 @@ const Build = () => {
             text-decoration-skip-ink: none;
             color: white;
             width: 100%;
+            span {
+                color: #E75F00;
+            }
             @media screen and (max-width: 1040px) {
                 font-size: 30px;
                 font-weight: 500;
@@ -105,7 +108,7 @@ const Build = () => {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: #FFFFFF80;
-                margin-top: 2rem;
+                margin-top: 1.5rem;
             }
         }
     `
@@ -124,7 +127,7 @@ const Build = () => {
 
         .left-card {
             border-radius: 32px;
-            border: 1px solid #414141;
+            border: 1px solid #E75F00;
             background-color: #12121299;
             border-radius: 32px;    
             padding: 2rem 1.2rem 2rem 1.5rem;
@@ -176,7 +179,7 @@ const Build = () => {
         .right-card {
             border-radius: 32px;
             border: 1px solid #414141;
-            background-color: #12121299;
+            border: 1px solid #E75F00;
             border-radius: 32px;
             padding: 2rem 1.2rem 2rem 1.5rem;
             width: 319px;
@@ -211,7 +214,7 @@ const Build = () => {
     return (
         <Wrapper>
             <img className='bg-img' src={bgBuild} alt="" />
-            <h2>Build, Train, and Deploy AI, Your Way!</h2>
+            <h2>Build, Train, and Deploy AI, <span>Your Way!</span></h2>
             <div className='middle-box'>
                 <div className='container'>
                     <LeftContainer>

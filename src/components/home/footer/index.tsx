@@ -26,7 +26,7 @@ const Footer = () => {
         width: 100%;
         height: 1078px;
         background-image: url('/bg-footer.svg');
-        margin-top: 1rem;
+        margin-top: 5rem;
         @media screen and (max-width: 1040px) {
             height: 100%;
         }
@@ -48,8 +48,10 @@ const Footer = () => {
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
-            color: white;
             paddign-top: 10rem;
+            background: -webkit-linear-gradient(#ffffff, #D22525);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             @media screen and (max-width: 1040px) {
                 font-size: 30px;
                 font-weight: 500;

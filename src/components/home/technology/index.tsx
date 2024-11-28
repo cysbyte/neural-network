@@ -20,7 +20,7 @@ const Technology = () => {
     ]
     const Wrapper = styled.section`
         width: 100%;
-        margin-top: 10rem;
+        margin-top: 9.5rem;
         @media screen and (max-width: 1040px) {
             margin-top: 30rem;
         }
@@ -57,10 +57,10 @@ const Technology = () => {
                 text-decoration-skip-ink: none;
                 color: white;
                 width: 100%;
-                margin-top: 2rem;
+                margin-top: 1rem;
             }
             .middle-box {
-                margin-top: 4rem;
+                margin-top: 4.5rem;
                 h3 {
                     font-family: Inter;
                     font-size: 32px;
@@ -91,8 +91,8 @@ const Technology = () => {
                         height: 272px;
                         padding: 2rem 2rem;
                         background-color: #121212;
-                        border: 2px solid #414141;
-                        border-radius: 16px;
+                        border: 1px solid #E75F00;
+                        border-radius: 32px;
                         h6 {
                             font-family: Inter;
                             font-size: 24px;
@@ -115,10 +115,15 @@ const Technology = () => {
                             color: #FFFFFF80;
                         }
                     }   
+                    .bg-card-gradient {
+                        background-image: url('/bg-technology-card.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
                 }
             }
             .bottom-box {
-                margin-top: 0rem;
+                margin-top: 1.5rem;
                 & > p: first-child {
                     font-family: Inter;
                     font-size: 16px;
@@ -140,7 +145,7 @@ const Technology = () => {
                     text-decoration-skip-ink: none;
                     color: white;
                     width: auto;
-                    margin-top: 1rem;
+                    margin-top: 0.8rem;
                 }
             }
         }
@@ -156,7 +161,9 @@ const Technology = () => {
                     <div className='technology-box'>
                         {
                             data.map((item) => (
-                                <div key={item.id} className='technology-card'>
+                                <div key={item.id} 
+                                className={`technology-card ${item.id===1?'bg-card-gradient': ''}`}
+                                >
                                     <h6>{item.title}</h6>
                                     <p>{item.desc}</p>
                                 </div>

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import logo from '@/assets/home/logo.svg'
 
 const Header = () => {
   const Wrapper = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem 4.8rem;
+    padding: 1.5rem 4.8rem;
     @media screen and (max-width: 800px) {
         padding: 1.8rem 1rem;
     }
@@ -45,8 +46,8 @@ const Header = () => {
       }
       .connect-button {
         padding: 1rem 2rem;
-        background-color: white;
-        color: black;
+        background-color: #E75F00;
+        color: white;
         font-family: Inter;
         font-size: 16px;
         font-weight: 700;
@@ -63,7 +64,7 @@ const Header = () => {
   `
   return (
     <Wrapper>
-      <h2>Neural Network</h2>
+      <img src={logo} alt="" />
       <div className='right-box'>
         <Link to='' className='signin-button'>Sign in</Link>
         <button className='connect-button'>Connect Wallet</button>
