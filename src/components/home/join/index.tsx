@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import join from '@/assets/home/join.svg'
-import bgJoin from '@/assets/home/bg-join.svg'
 import { Link } from 'react-router-dom'
 
 const Join = () => {
