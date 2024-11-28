@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import bgCard from '@/assets/home/bg-technology-card.svg'
 
 const Technology = () => {
     const data = [
@@ -87,12 +88,17 @@ const Technology = () => {
                         flex-direction: column;
                     }
                     .technology-card {
+                        position: relative;
                         flex: 1;
                         height: 272px;
                         padding: 2rem 2rem;
                         background-color: #121212;
                         border: 1px solid #E75F00;
                         border-radius: 32px;
+                        overflow: hidden;
+                        @media screen and (max-width: 1040px) {
+                            width: 100%;
+                        }
                         h6 {
                             font-family: Inter;
                             font-size: 24px;
@@ -114,11 +120,20 @@ const Technology = () => {
                             text-decoration-skip-ink: none;
                             color: #FFFFFF80;
                         }
+                        img {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                            object-fit: cover;
+                        }
                     }   
                     .bg-card-gradient {
-                        background-image: url('/bg-technology-card.svg');
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                        border-width: 1px;
+                    }
+                    .bg-card-no-gradient {
+                        border-width: 1px;
                     }
                 }
             }
@@ -164,6 +179,7 @@ const Technology = () => {
                                 <div key={item.id} 
                                 className={`technology-card ${item.id===1?'bg-card-gradient': ''}`}
                                 >
+                                    {item.id===1 && <img src={bgCard} alt="" />}
                                     <h6>{item.title}</h6>
                                     <p>{item.desc}</p>
                                 </div>
