@@ -211,7 +211,7 @@ const Incentive = () => {
     return (
         <Wrapper>
             <img className='separator' src={separator} alt="" />
-            <h2>Incentive- <span>Driven AI Collaboration</span></h2>
+            <h2>Incentive-<span>Driven AI Collaboration</span></h2>
             <p>Rewarding users for impactful contributions in AI training, data processing, and model optimization, fostering a collaborative and high-<br />performance AI ecosystem.</p>
             <div className='middle-box'>
                 <h4>Tokenomics</h4>

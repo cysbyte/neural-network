@@ -178,8 +178,8 @@ const Build = () => {
         
         .right-card {
             border-radius: 32px;
-            border: 1px solid #414141;
             border: 1px solid #E75F00;
+            background-color: #12121299;
             border-radius: 32px;
             padding: 2rem 1.2rem 2rem 1.5rem;
             width: 319px;

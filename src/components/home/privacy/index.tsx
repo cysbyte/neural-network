@@ -7,10 +7,17 @@ const Privacy = () => {
         width: 1040px;
         margin: auto auto;
         display: flex;
+        flex-direction: row;
         gap: 2rem;
         justify-content: center;
         align-items: start;
         margin-top: 13rem;
+        @media screen and (max-width: 1040px) {
+            width: 100%;
+            flex-direction: column;
+            justify-content: start;
+            gap: 1rem;
+        }
             .left-box {
                 h2 {
                     font-family: Inter;
@@ -64,6 +71,12 @@ const Privacy = () => {
         img {
             margin-right: -7.5rem;
             margin-top: -2.5rem;
+            @media screen and (max-width: 1040px) {
+                width: 100%;
+                margin-right: 0rem;
+                margin: 4rem 0rem 8rem 0rem;
+
+            }
         }
     `
     return (
