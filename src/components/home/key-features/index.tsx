@@ -37,6 +37,8 @@ const KeyFeatures = () => {
             position: absolute;
             left: 0;
             bottom: 0rem;
+            object-fit: cover;
+            width: 100%;
             z-index: 0;
             @media screen and (max-width: 1040px) {
                 display: none;

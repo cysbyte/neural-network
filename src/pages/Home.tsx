@@ -19,7 +19,7 @@ const Home = () => {
         background-color: black;
         .upper-box {
             background-color: black;
-            max-width: 1454px;
+            max-width: 1920px;
             overflow: hidden;
             margin: auto auto;
             padding: 0 0;
