@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import privacy from '@/assets/home/privacy.svg'
+import React from 'react'
 
 const Privacy = () => {
     const Wrapper = styled.section`
@@ -93,4 +94,4 @@ const Privacy = () => {
     )
 }
 
-export default Privacy
+export default React.memo(Privacy)

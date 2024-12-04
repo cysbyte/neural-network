@@ -3,6 +3,7 @@ import twitter from '@/assets/home/social/twitter.svg'
 import telegram from '@/assets/home/social/telegram.svg'
 import github from '@/assets/home/social/github.svg'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 const SocialLinks = () => {
     const Wrapper = styled.div`
@@ -20,4 +21,4 @@ const SocialLinks = () => {
   )
 }
 
-export default SocialLinks
+export default React.memo(SocialLinks)

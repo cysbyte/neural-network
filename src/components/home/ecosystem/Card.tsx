@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const Card = ({id, title, desc}: 
@@ -34,4 +35,4 @@ const Card = ({id, title, desc}:
   )
 }
 
-export default Card
+export default React.memo(Card)

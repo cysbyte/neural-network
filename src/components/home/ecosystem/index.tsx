@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import Card from './Card'
 import separator from '@/assets/home/separator.svg'
+import React from 'react'
 
 const Ecosystem = () => {
     const data = [
@@ -194,4 +195,4 @@ const Ecosystem = () => {
     )
 }
 
-export default Ecosystem
+export default React.memo(Ecosystem)

@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const Input = ({placeholder}:
@@ -49,4 +50,4 @@ const Input = ({placeholder}:
   )
 }
 
-export default Input
+export default React.memo(Input)

@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const SubscribeButton = () => {
@@ -35,4 +36,4 @@ const SubscribeButton = () => {
     )
 }
 
-export default SubscribeButton
+export default React.memo(SubscribeButton)

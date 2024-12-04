@@ -3,6 +3,7 @@ import Input from './Input'
 import SubscribeButton from './SubscribeButton'
 import SocialLinks from './SocialLinks'
 import BottomLinks from './BottomLinks'
+import React from 'react'
 
 const Footer = () => {
     const data = [
@@ -217,4 +218,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default React.memo(Footer)

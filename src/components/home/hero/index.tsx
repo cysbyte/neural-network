@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import bgHero from '@/assets/home/bg-hero.svg'
 import arrow from '@/assets/home/arrow.svg'
+import React from 'react'
 
 const Hero = () => {
     const Wrapper = styled.section`
@@ -143,4 +144,4 @@ const Hero = () => {
     )
 }
 
-export default Hero
+export default React.memo(Hero)

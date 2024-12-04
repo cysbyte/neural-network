@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import bgBuild from '@/assets/home/bg-build.svg'
+import React from 'react'
 
 const Build = () => {
     const leftData = [
@@ -244,4 +245,4 @@ const Build = () => {
     )
 }
 
-export default Build
+export default React.memo(Build)

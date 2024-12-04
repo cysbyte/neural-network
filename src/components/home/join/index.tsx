@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import join from '@/assets/home/join.svg'
 import { Link } from 'react-router-dom'
+import React from 'react'
 
 const Join = () => {
     const Wrapper = styled.section`
@@ -101,4 +102,4 @@ const Join = () => {
     )
 }
 
-export default Join
+export default React.memo(Join)

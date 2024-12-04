@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import logo from '@/assets/home/logo.svg'
+import React from 'react'
 
 const Header = () => {
   const Wrapper = styled.section`
@@ -73,4 +74,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default React.memo(Header)

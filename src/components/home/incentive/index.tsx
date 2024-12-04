@@ -4,6 +4,7 @@ import Desc2 from './Desc2'
 import Desc3 from './Desc3'
 import Desc4 from './Desc4'
 import separator from '@/assets/home/separator.svg'
+import React from 'react'
 
 const Incentive = () => {
     const data1 = [
@@ -246,4 +247,4 @@ const Incentive = () => {
     )
 }
 
-export default Incentive
+export default React.memo(Incentive)

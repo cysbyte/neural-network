@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import bgCard from '@/assets/home/bg-technology-card.svg'
+import React from 'react'
 
 const Technology = () => {
     const data = [
@@ -196,4 +197,4 @@ const Technology = () => {
     )
 }
 
-export default Technology
+export default React.memo(Technology)

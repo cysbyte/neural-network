@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const Desc2 = () => {
@@ -52,4 +53,4 @@ const Desc2 = () => {
   )
 }
 
-export default Desc2
+export default React.memo(Desc2)

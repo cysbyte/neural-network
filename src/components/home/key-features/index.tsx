@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import bg from '@/assets/home/bg-features.svg'
+import React from 'react'
 
 const KeyFeatures = () => {
 
@@ -168,4 +169,4 @@ const KeyFeatures = () => {
     )
 }
 
-export default KeyFeatures
+export default React.memo(KeyFeatures)
