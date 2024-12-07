@@ -1,30 +1,31 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SubscribeButton = () => {
-    const Wrapper = styled.article`
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 1rem;
-        border-bottom: 1px solid #FFFFFF80;
-        background-color: black;
+const Wrapper = styled.article`
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #FFFFFF80;
+    background-color: black;
+    color: white;
+    flex: 1;
+    padding: 1rem 0rem;
+    margin-top: 0.5rem;
+    p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
         color: white;
-        flex: 1;
-        padding: 1rem 0rem;
-        margin-top: 0.5rem;
-        p {
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19.36px;
-            text-align: left;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: white;
-        }
-    `
+    }
+`
+
+const SubscribeButton = () => {
     return (
         <Wrapper>
             <p>Subscribe</p>

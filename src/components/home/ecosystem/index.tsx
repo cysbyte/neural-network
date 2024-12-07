@@ -3,6 +3,128 @@ import Card from './Card'
 import separator from '@/assets/home/separator.svg'
 import React from 'react'
 
+const Wrapper = styled.section`
+    width: 100%;
+    margin-top: 12rem;
+    position: relative;
+    @media screen and (max-width: 1040px) {
+        margin-top: 5rem;
+    }
+    .separator {
+        width: 100%;
+        position: absolute;
+        left: 0; 
+        top: 31.8rem;
+        @media screen and (max-width: 1040px) {
+            display: none;
+        }
+    }
+    h2 {
+        font-family: Inter;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 53.25px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+        letter-spacing: 1px;
+        span {
+            color: #E75F00;
+        }
+        @media screen and (max-width: 1040px) {
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 500;
+        }
+    }
+    p {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: white;
+        margin-top: 1.5rem;
+    }
+    .middle-box {
+        width: 1040px;
+        margin: auto auto;
+        margin-top: 5rem;
+        @media screen and (max-width: 1040px) {
+            width: 100%;
+            padding: 1rem;
+        }
+        h3 {
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 38.73px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: white;
+            letter-spacing: 1px;
+            @media screen and (max-width: 1040px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        p {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: white;
+            margin-top: 1rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 5rem;
+            column-gap: 1rem;
+            margin-top: 4rem;
+            @media screen and (max-width: 1040px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }
+    .bottom-box {
+        margin-top: 4rem;
+        & > p: first-child {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF80;
+            width: auto;
+        }
+        & > p: last-child {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: white;
+            width: auto;
+            margin-top: 1rem;
+        }
+    }
+`
 const Ecosystem = () => {
     const data = [
         {
@@ -46,128 +168,6 @@ const Ecosystem = () => {
             desc: 'Enhance ecosystem security and uphold decentralized standards.'
         },
     ]
-    const Wrapper = styled.section`
-        width: 100%;
-        margin-top: 12rem;
-        position: relative;
-        @media screen and (max-width: 1040px) {
-            margin-top: 5rem;
-        }
-        .separator {
-            width: 100%;
-            position: absolute;
-            left: 0; 
-            top: 31.8rem;
-            @media screen and (max-width: 1040px) {
-                display: none;
-            }
-        }
-        h2 {
-            font-family: Inter;
-            font-size: 44px;
-            font-weight: 700;
-            line-height: 53.25px;
-            text-align: center;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: white;
-            letter-spacing: 1px;
-            span {
-                color: #E75F00;
-            }
-            @media screen and (max-width: 1040px) {
-                font-size: 30px;
-                line-height: 36px;
-                font-weight: 500;
-            }
-        }
-        p {
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19.36px;
-            text-align: center;
-            text-underline-position: from-font;
-            text-decoration-skip-ink: none;
-            color: white;
-            margin-top: 1.5rem;
-        }
-        .middle-box {
-            width: 1040px;
-            margin: auto auto;
-            margin-top: 5rem;
-            @media screen and (max-width: 1040px) {
-                width: 100%;
-                padding: 1rem;
-            }
-            h3 {
-                font-family: Inter;
-                font-size: 32px;
-                font-weight: 400;
-                line-height: 38.73px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: white;
-                letter-spacing: 1px;
-                @media screen and (max-width: 1040px) {
-                    font-size: 24px;
-                    line-height: 30px;
-                }
-            }
-            p {
-                font-family: Inter;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 19.36px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: white;
-                margin-top: 1rem;
-            }
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                row-gap: 5rem;
-                column-gap: 1rem;
-                margin-top: 4rem;
-                @media screen and (max-width: 1040px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 1rem;
-                }
-            }
-        }
-        .bottom-box {
-            margin-top: 4rem;
-            & > p: first-child {
-                font-family: Inter;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 19.36px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: #FFFFFF80;
-                width: auto;
-            }
-            & > p: last-child {
-                font-family: Inter;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 19.36px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: white;
-                width: auto;
-                margin-top: 1rem;
-            }
-        }
-    `
     return (
         <Wrapper>
             <img className='separator' src={separator} alt="" />

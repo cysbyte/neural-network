@@ -6,48 +6,7 @@ import Desc4 from './Desc4'
 import separator from '@/assets/home/separator.svg'
 import React from 'react'
 
-const Incentive = () => {
-    const data1 = [
-        {
-            id: 1,
-            title: "Total Supply",
-            desc: <Desc1 />
-        },
-        {
-            id: 2,
-            title: "Team Allocation",
-            desc: <Desc2 />
-        },
-        {
-            id: 3,
-            title: "Total Supply",
-            desc: <Desc3 />
-        },
-        {
-            id: 4,
-            title: "Mining & Rewards",
-            desc: <Desc4 />
-        },
-    ]
-    const data2 = [
-        {
-            id: 1,
-            title: "Staking & Penalties",
-            desc: "Minimum staking duration with early withdrawal penalties"
-        },
-        {
-            id: 2,
-            title: "Governance Benefits",
-            desc: "Enhanced rights for large contributors"
-        },
-        {
-            id: 3,
-            title: "Transaction Tax",
-            desc: "Funding for DAOAgent"
-        },
-    ]
-
-    const GradientBorderWrapper = styled.div`
+const GradientBorderWrapper = styled.div`
         background: conic-gradient(from 90deg at 50% 50%, #E75F00 0deg, #000000 79.2deg, #E75F00 360deg);
         border-radius: 32px;
         padding: 1px;
@@ -56,7 +15,7 @@ const Incentive = () => {
         margin-top: 2rem;
     `
 
-    const Wrapper = styled.section`
+const Wrapper = styled.section`
         margin-top: 12rem;
         position: relative;
         .separator {
@@ -209,6 +168,47 @@ const Incentive = () => {
             }
         }
     `
+
+const Incentive = () => {
+    const data1 = [
+        {
+            id: 1,
+            title: "Total Supply",
+            desc: <Desc1 />
+        },
+        {
+            id: 2,
+            title: "Team Allocation",
+            desc: <Desc2 />
+        },
+        {
+            id: 3,
+            title: "Total Supply",
+            desc: <Desc3 />
+        },
+        {
+            id: 4,
+            title: "Mining & Rewards",
+            desc: <Desc4 />
+        },
+    ]
+    const data2 = [
+        {
+            id: 1,
+            title: "Staking & Penalties",
+            desc: "Minimum staking duration with early withdrawal penalties"
+        },
+        {
+            id: 2,
+            title: "Governance Benefits",
+            desc: "Enhanced rights for large contributors"
+        },
+        {
+            id: 3,
+            title: "Transaction Tax",
+            desc: "Funding for DAOAgent"
+        },
+    ]
     return (
         <Wrapper>
             <img className='separator' src={separator} alt="" />

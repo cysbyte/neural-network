@@ -5,13 +5,13 @@ import github from '@/assets/home/social/github.svg'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
+const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+`
 const SocialLinks = () => {
-    const Wrapper = styled.div`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    `
   return (
     <Wrapper>
         <Link to=''><img src={twitter} alt="" /></Link>

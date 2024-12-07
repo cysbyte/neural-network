@@ -11,25 +11,25 @@ const Privacy = React.lazy(()=>import('@/components/home/privacy'))
 const Technology = React.lazy(()=>import('@/components/home/technology'))
 import styled from 'styled-components'
 
+const Wrapper = styled.main`
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    .upper-box {
+        background-color: black;
+        max-width: 1920px;
+        overflow: hidden;
+        margin: auto auto;
+        padding: 0 0;
+        @media screen and (max-width: 800px) {
+            padding: 0rem 1rem;
+            overflow: hidden;
+        }
+    }
+   
+`
 
 const Home = () => {
-    const Wrapper = styled.main`
-        width: 100%;
-        overflow: hidden;
-        background-color: black;
-        .upper-box {
-            background-color: black;
-            max-width: 1920px;
-            overflow: hidden;
-            margin: auto auto;
-            padding: 0 0;
-            @media screen and (max-width: 800px) {
-                padding: 0rem 1rem;
-                overflow: hidden;
-            }
-        }
-       
-    `
     return (
         <Wrapper>
             <div className='upper-box'>

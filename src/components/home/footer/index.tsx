@@ -5,6 +5,16 @@ import SocialLinks from './SocialLinks'
 import BottomLinks from './BottomLinks'
 import React from 'react'
 
+const Wrapper = styled.section`
+    width: 100%;
+    height: 1078px;
+    background-image: url('/bg-footer.svg');
+    margin-top: 5rem;
+    @media screen and (max-width: 1040px) {
+        height: 100%;
+    }
+`
+
 const Footer = () => {
     const data = [
         {
@@ -23,15 +33,6 @@ const Footer = () => {
             desc: "Learn how global contributors power innovation in AI models and applications."
         },
     ]
-    const Wrapper = styled.section`
-        width: 100%;
-        height: 1078px;
-        background-image: url('/bg-footer.svg');
-        margin-top: 5rem;
-        @media screen and (max-width: 1040px) {
-            height: 100%;
-        }
-    `
     const BlogWrapper = styled.div`
         width: 1040px;
         margin: auto auto;
